@@ -1,0 +1,28 @@
+{
+  "name": "dir_cache",
+  "version": "1.0.0",
+  "description": "This cache files in folders",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/eagle7410/dir-cache.git"
+  },
+  "keywords": [
+    "cache",
+    "files"
+  ],
+  "author": {
+    "name": "Igor Stcherbina",
+    "email": "verycooleagle@gmail.com",
+    "skype": "eagleeagle7410"
+  },
+  "engines": {
+    "node": ">=4.2.6"
+  },
+  "license": "UNLICENSED",
+  "dependencies": {
+  },
+  "devDependencies": {
+    "babel-cli": "^6.16.0",
+    "babel-preset-es2015": "^6.16.0"
+  }
+}
