@@ -20,9 +20,12 @@
   },
   "license": "UNLICENSED",
   "dependencies": {
+    "async": "^2.0.1",
+    "utils-igor": "^1.0.3"
   },
   "devDependencies": {
     "babel-cli": "^6.16.0",
-    "babel-preset-es2015": "^6.16.0"
+    "babel-preset-es2015": "^6.16.0",
+    "winston": "^2.2.0"
   }
 }
