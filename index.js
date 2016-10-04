@@ -3,7 +3,7 @@
  */
 var cacheDir = require('./lib/dir-cache');
 
-var scan = cacheDir.scan({dirs: 'cabmin/views', exts : ['.html']}, (e, scan)  => {
+var scan = cacheDir.read({dirs: 'cabmin/views', exts : ['.html']}, (e, scan)  => {
 
 	if (e) {
 		return console.log('ERR : ', e );
@@ -14,7 +14,8 @@ var scan = cacheDir.scan({dirs: 'cabmin/views', exts : ['.html']}, (e, scan)  =>
 			return console.log('ERR : ', e );
 		}
 
-		console.log('REs', scan);
+		// TODO: clear
+		console.log('scan', scan);
 	});
 
 

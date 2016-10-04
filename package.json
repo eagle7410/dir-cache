@@ -21,7 +21,7 @@
   "license": "UNLICENSED",
   "dependencies": {
     "async": "^2.0.1",
-    "utils-igor": "^1.0.3"
+    "utils-igor": "^1.0.4"
   },
   "devDependencies": {
     "babel-cli": "^6.16.0",
