@@ -8,3 +8,5 @@
  */
 var prod = process.env.NODE_ENV === 'dev' ? '' : 'prod/';
 module.exports = require('./lib/' + prod + 'dir-cache');
+
+//# sourceMappingURL=index-compiled.js.map

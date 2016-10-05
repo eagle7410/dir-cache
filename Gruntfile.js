@@ -9,42 +9,8 @@ module.exports = function(grunt) {
 				src: 'lib/*.js',
 				dest: 'Readme.md'
 			}
-		},
-		uglify : {
-			options: {
-				quoteStyle : 3
-			},
-			js : {
-				files: {
-					'lib/prod/dir-cache.js': ['lib/dir-cache.js']
-				}
-			}
 		}
-		//babel: {
-		//	options: {
-		//		"sourceMap": true,
-		//		"experimental": true,
-		//		"plugins": ["transform-es2015-modules-amd"]
-		//	},
-		//	dist: {
-		//		files: {
-		//			'./lib/prod/dir-cache.js': './lib/dir-cache.js'
-		//		}
-		//	}
-		//},
-		//browserify: {
-		//	dist: {
-		//		options: {
-		//			transform: [["babelify", { "stage": 0 }]]
-		//		},
-		//		files: {
-		//			"./lib/prod/dir-cache.js": "./lib/dir-cache.js"
-		//		}
-		//	}
-		//}
 	});
-	grunt.loadNpmTasks('grunt-jsdoc-to-markdown');
-	grunt.loadNpmTasks('grunt-contrib-uglify');
-	grunt.loadNpmTasks("grunt-browserify");
-	grunt.registerTask('default', ['uglify', 'jsdoc2md']);
+	grunt.loadNpmTasks('grunt-jsdoc-to-markdown')
+	grunt.registerTask('default', ['jsdoc2md']);
 };
