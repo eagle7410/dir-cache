@@ -1,3 +1,4 @@
+<a name="module_cacheDir"></a>
 
 ## cacheDir
 This module is needed for caching data.
@@ -7,7 +8,7 @@ Also caches template files swigJs.
 
 
 * [cacheDir](#module_cacheDir)
-    * [module.exports](#exp_module_cacheDir--module.exports) :
+    * [module.exports](#exp_module_cacheDir--module.exports) : <code>Object</code> ⏏
         * [~Frame](#module_cacheDir--module.exports..Frame)
             * [.err(mess)](#module_cacheDir--module.exports..Frame+err) ⇒ <code>Object</code>
             * [.warn(mess, that)](#module_cacheDir--module.exports..Frame+warn)

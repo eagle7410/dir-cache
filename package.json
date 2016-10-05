@@ -21,11 +21,23 @@
   "license": "UNLICENSED",
   "dependencies": {
     "async": "^2.0.1",
+    "minify": "^2.0.12",
     "utils-igor": "^1.0.4"
   },
   "devDependencies": {
     "babel-cli": "^6.16.0",
     "babel-preset-es2015": "^6.16.0",
+    "babelify": "6.0.1",
+    "gcc-min": "^1.0.81",
+    "grunt": "^1.0.1",
+    "grunt-babel": "^6.0.0",
+    "grunt-browserify": "3.6.0",
+    "grunt-contrib-uglify": "^2.0.0",
+    "grunt-jsdoc-to-markdown": "^1.2.1",
+    "gulp": "^3.9.1",
+    "gulp-babel": "^6.1.2",
+    "load-grunt-tasks": "^3.5.2",
+    "ps-grab": "^1.0.1",
     "winston": "^2.2.0"
   }
 }

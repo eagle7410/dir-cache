@@ -4,68 +4,47 @@
 module.exports = function(grunt) {
 
 	grunt.initConfig({
-		concat: {
-
-			js: {
-				src: [
-					'./public/bower_components/jquery/dist/jquery.min.js',
-					'./public/bower_components/bootstrap/dist/js/bootstrap.min.js',
-					'./public/bower_components/bootstrap-sweetalert/dist/sweetalert.min.js',
-					'./public/bower_components/doT/doT.min.js',
-					'./public/js/jquery.doT.plugin.js',
-					'./public/js/jquery.ajaxHelper.js'
-				],
-				dest: './public/assets/js/utils.js'
-			},
-			css : {
-				src: [
-					'./public/bower_components/bootstrap/dist/css/bootstrap.min.css',
-					'./public/bower_components/components-font-awesome/css/font-awesome.min.css',
-					'./public/bower_components/bootstrap-sweetalert/dist/sweetalert.css'
-
-				],
-				dest: './public/assets/css/style.css'
-			},
-			cssLogin : {
-				src: [
-					'./public/bower_components/bootstrap/dist/css/bootstrap.min.css',
-					'./public/css/login.css'
-				],
-				dest: './public/assets/css/login.css'
+		jsdoc2md: {
+			oneOutputFile: {
+				src: 'lib/*.js',
+				dest: 'Readme.md'
 			}
 		},
-		uglify: {
+		uglify : {
 			options: {
-				mangle: false
+				quoteStyle : 3
 			},
-			js: {
+			js : {
 				files: {
-					'./public/assets/js/utils.min.js': ['./public/assets/js/utils.js']
+					'lib/prod/dir-cache.js': ['lib/dir-cache.js']
 				}
 			}
-		},
-		cssmin: {
-			style: {
-				files: {
-					'./public/assets/css/style.min.css': ['./public/assets/css/style.css']
-				}
-			},
-			login: {
-				files: {
-					'./public/assets/css/login.min.css': ['./public/assets/css/login.css']
-				}
-			}
-		},
-		default : ['concat', 'uglify', 'cssmin']
+		}
+		//babel: {
+		//	options: {
+		//		"sourceMap": true,
+		//		"experimental": true,
+		//		"plugins": ["transform-es2015-modules-amd"]
+		//	},
+		//	dist: {
+		//		files: {
+		//			'./lib/prod/dir-cache.js': './lib/dir-cache.js'
+		//		}
+		//	}
+		//},
+		//browserify: {
+		//	dist: {
+		//		options: {
+		//			transform: [["babelify", { "stage": 0 }]]
+		//		},
+		//		files: {
+		//			"./lib/prod/dir-cache.js": "./lib/dir-cache.js"
+		//		}
+		//	}
+		//}
 	});
-
-
-	grunt.loadNpmTasks('grunt-contrib-concat');
+	grunt.loadNpmTasks('grunt-jsdoc-to-markdown');
 	grunt.loadNpmTasks('grunt-contrib-uglify');
-	//grunt.loadNpmTasks('grunt-contrib-less');
-	grunt.loadNpmTasks('grunt-contrib-cssmin');
-	grunt.registerTask('default', ['concat', 'uglify', 'cssmin']);
+	grunt.loadNpmTasks("grunt-browserify");
+	grunt.registerTask('default', ['uglify', 'jsdoc2md']);
 };
-
-
-
