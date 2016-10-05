@@ -1,7 +1,7 @@
 /**
  * Created by igor on 26.07.16.
  */
-module.exports = function(grunt) {
+module.exports = function (grunt) {
 
 	grunt.initConfig({
 		jsdoc2md: {
@@ -11,6 +11,8 @@ module.exports = function(grunt) {
 			}
 		}
 	});
-	grunt.loadNpmTasks('grunt-jsdoc-to-markdown')
+	grunt.loadNpmTasks('grunt-jsdoc-to-markdown');
 	grunt.registerTask('default', ['jsdoc2md']);
 };
+
+//# sourceMappingURL=Gruntfile-compiled.js.map
