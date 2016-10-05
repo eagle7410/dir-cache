@@ -1,35 +1,24 @@
-## Modules
-
-<dl>
-<dt><a href="#module_cacheDir">cacheDir</a></dt>
-<dd><p>This module is needed for caching data.
-It can search for files with certain extension in folders.
-Collect file contents or contents could be through a flaw require function.
-Also caches template files swigJs.</p>
-</dd>
-<dt><a href="#module_cacheDir">cacheDir</a></dt>
-<dd><p>This module is needed for caching data.
-It can search for files with certain extension in folders.
-Collect file contents or contents could be through a flaw require function.
-Also caches template files swigJs.</p>
-</dd>
-</dl>
-
-<a name="module_cacheDir"></a>
-
-## cacheDir
+# cacheDir
 This module is needed for caching data.
 It can search for files with certain extension in folders.
 Collect file contents or contents could be through a flaw require function.
 Also caches template files swigJs.
 
+### Installation
+----
+
+```bash
+npm install utils-igor
+```
 
 * [cacheDir](#module_cacheDir)
     * [module.exports](#exp_module_cacheDir--module.exports) : <code>Object</code> ⏏
     * [module.exports](#exp_module_cacheDir--module.exports) : <code>Object</code> ⏏
 
 <a name="exp_module_cacheDir--module.exports"></a>
+
 ## examle
+----
 ```js
 var dirCache = require('./index');
 var async = require('async');

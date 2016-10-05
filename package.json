@@ -7,6 +7,9 @@
     "url": "https://github.com/eagle7410/dir-cache.git"
   },
   "keywords": [
+    "required files",
+    "search files",
+    "swig cache",
     "cache",
     "files"
   ],
@@ -30,5 +33,6 @@
     "grunt-jsdoc-to-markdown": "^1.2.1",
     "grunt-node-qunit": "^2.0.2",
     "winston": "^2.2.0"
-  }
+  },
+  "_id": "dir_cache@1.0.0"
 }
