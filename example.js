@@ -27,7 +27,7 @@ async.series([
 		(done)  => {
 			console.log('Test read two folders. Get only html files');
 			dirCache.read({
-				dirs : ['for-example/views1', 'for-example/views'],
+				dirs : ['for-example/views1', {path : __dirname + '/for-example/views'}],
 				exts : ['.html']
 			}, (e, scan) => {
 
