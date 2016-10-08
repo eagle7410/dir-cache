@@ -1,6 +1,6 @@
 {
   "name": "dir_cache",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "This cache files in folders",
   "repository": {
     "type": "git",
@@ -24,6 +24,7 @@
   "license": "UNLICENSED",
   "dependencies": {
     "async": "^2.0.1",
+    "minify-js": "0.0.2",
     "utils-igor": "^1.0.4"
   },
   "devDependencies": {
@@ -31,8 +32,7 @@
     "babel-preset-es2015": "^6.16.0",
     "grunt": "^1.0.1",
     "grunt-jsdoc-to-markdown": "^1.2.1",
-    "grunt-node-qunit": "^2.0.2",
     "winston": "^2.2.0"
   },
-  "_id": "dir_cache@1.0.0"
+  "_id": "dir_cache@1.0.1"
 }
